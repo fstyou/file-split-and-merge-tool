@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane xmlns:fx = "http://javafx.com/fxml/1"
+      prefHeight = "553.0"
+      prefWidth = "560.0"
+      xmlns = "http://javafx.com/javafx"
+      fx:controller = "com.merge.Control" >
+    <Label alignment = "CENTER"
+           contentDisplay = "CENTER"
+           layoutX = "15.0"
+           layoutY = "15.0"
+           prefHeight = "50.0"
+           prefWidth = "535.0"
+           text = "文件合并" >
+        <font >
+            <Font name = "System Bold"
+                  size = "30.0" />
+        </font >
+    </Label >
+    <Label alignment = "CENTER"
+           contentDisplay = "CENTER"
+           layoutX = "15.0"
+           layoutY = "65.0"
+           prefHeight = "20.0"
+           prefWidth = "535.0"
+           text = "------------------------------------------------------------"
+           wrapText = "true" >
+        <font >
+            <Font name = "System Bold"
+                  size = "20.0" />
+        </font >
+    </Label >
+    <Button fx:id = "pathButton"
+            alignment = "CENTER"
+            contentDisplay = "CENTER"
+            focusTraversable = "false"
+            layoutX = "430.0"
+            layoutY = "100.0"
+            mnemonicParsing = "false"
+            prefHeight = "35.0"
+            prefWidth = "90.0"
+            text = "选择文件" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Button >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "100.0"
+           prefHeight = "40.0"
+           prefWidth = "260.0"
+           text = "请选择分割出的第一个文件："
+           wrapText = "true" >
+        <font >
+            <Font name = "System Bold"
+                  size = "20.0" />
+        </font >
+    </Label >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "140.0"
+           prefHeight = "40.0"
+           prefWidth = "520.0"
+           text = "( 其名称类似“文件名.1”，类型为“1文件”)"
+           wrapText = "true" >
+        <font >
+            <Font name = "System Italic"
+                  size = "20.0" />
+        </font >
+    </Label >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "190.0"
+           prefHeight = "20.0"
+           prefWidth = "280.0"
+           text = "下面显示分割出来的第一个文件的路径：" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Label fx:id = "pathLabel"
+           contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "215.0"
+           prefHeight = "20.0"
+           prefWidth = "500.0"
+           snapToPixel = "false"
+           text = "您尚未选择任何文件夹" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Button fx:id = "pathsButton"
+            alignment = "CENTER"
+            contentDisplay = "CENTER"
+            focusTraversable = "false"
+            layoutX = "430.0"
+            layoutY = "245.0"
+            mnemonicParsing = "false"
+            prefHeight = "35.0"
+            prefWidth = "90.0"
+            text = "选择路径" >
+        <font >
+            <Font name = "System Italic"
+                  size = "15.0" />
+        </font >
+    </Button >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "245.0"
+           prefHeight = "40.0"
+           prefWidth = "300.0"
+           text = "请选择文件合并后的的保存路径："
+           wrapText = "true" >
+        <font >
+            <Font name = "System Bold"
+                  size = "20.0" />
+        </font >
+    </Label >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "290.0"
+           prefHeight = "20.0"
+           prefWidth = "200.0"
+           text = "下面显示选择的文件夹路径：" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Label fx:id = "pathsLabel"
+           contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "320.0"
+           prefHeight = "20.0"
+           prefWidth = "500.0"
+           snapToPixel = "false"
+           text = "您尚未选择任何文件夹" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Button fx:id = "beginButton"
+            alignment = "CENTER"
+            contentDisplay = "CENTER"
+            focusTraversable = "false"
+            layoutX = "430.0"
+            layoutY = "350.0"
+            mnemonicParsing = "false"
+            prefHeight = "35.0"
+            prefWidth = "90.0"
+            text = "开始合并" >
+        <font >
+            <Font name = "System Italic"
+                  size = "15.0" />
+        </font >
+    </Button >
+    <Label contentDisplay = "CENTER"
+           layoutX = "25.0"
+           layoutY = "350.0"
+           prefHeight = "40.0"
+           prefWidth = "160.0"
+           text = "开始合并文件：" >
+        <font >
+            <Font name = "System Bold"
+                  size = "20.0" />
+        </font >
+    </Label >
+    <Label contentDisplay = "CENTER"
+           layoutX = "260.0"
+           layoutY = "405.0"
+           prefHeight = "25.0"
+           prefWidth = "50.0"
+           text = "状态：" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Label fx:id = "statusLabel"
+           alignment = "CENTER"
+           contentDisplay = "CENTER"
+           layoutX = "20.0"
+           layoutY = "430.0"
+           prefHeight = "25.0"
+           prefWidth = "520.0"
+           text = "您尚未开始合并" >
+        <font >
+            <Font size = "15.0" />
+        </font >
+    </Label >
+    <Button fx:id = "exitButton"
+            alignment = "CENTER"
+            contentDisplay = "CENTER"
+            disable = "true"
+            focusTraversable = "false"
+            layoutX = "85.0"
+            layoutY = "470.0"
+            mnemonicParsing = "false"
+            prefHeight = "60.0"
+            prefWidth = "385.0"
+            text = "停止合并" >
+        <font >
+            <Font name = "System Bold"
+                  size = "20.0" />
+        </font >
+    </Button >
+</Pane >

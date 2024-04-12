@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<TabPane focusTraversable = "false"
+         prefHeight = "580.0"
+         prefWidth = "560.0"
+         tabClosingPolicy = "UNAVAILABLE"
+         tabMinHeight = "25.0"
+         tabMinWidth = "20.0"
+         xmlns = "http://javafx.com/javafx"
+         xmlns:fx = "http://javafx.com/fxml/1"
+         fx:controller = "com.main.Control" >
+    <Tab text = "开 始" >
+        <Pane >
+            <Label alignment = "CENTER"
+                   contentDisplay = "CENTER"
+                   layoutX = "15.0"
+                   layoutY = "15.0"
+                   prefHeight = "50.0"
+                   prefWidth = "535.0"
+                   text = "文件分割与合并工具" >
+                <font >
+                    <Font name = "System Bold"
+                          size = "30.0" />
+                </font >
+            </Label >
+            <Label alignment = "CENTER"
+                   contentDisplay = "CENTER"
+                   layoutX = "15.0"
+                   layoutY = "55.0"
+                   prefHeight = "20.0"
+                   prefWidth = "535.0"
+                   text = "v1.0.0 By 枫上天游" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "12.0" />
+                </font >
+            </Label >
+            <Label alignment = "CENTER"
+                   contentDisplay = "CENTER"
+                   layoutX = "15.0"
+                   layoutY = "65.0"
+                   prefHeight = "20.0"
+                   prefWidth = "535.0"
+                   text = "------------------------------------------------------------" >
+                <font >
+                    <Font name = "System Bold"
+                          size = "20.0" />
+                </font >
+            </Label >
+            <Label alignment = "CENTER"
+                   contentDisplay = "CENTER"
+                   layoutX = "15.0"
+                   layoutY = "100.0"
+                   prefHeight = "35.0"
+                   prefWidth = "535.0"
+                   text = "使用说明"
+                   underline = "true" >
+                <font >
+                    <Font name = "System Bold"
+                          size = "20.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "150.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "1. 本工具可用于文件太大无法传输，需要拆分成小文件传输的场景，" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "175.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "    例如微信发送文件有 1GiB 大小的限制；" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "210.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "2. 本工具为开源项目，遇到问题请前往项目仓库提 Issue，" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "235.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "     因使用本工具造成文件损坏、丢失，作者不负任何责任；" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "270.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "3. 本工具使用 GPL v2 协议，请遵守该协议的条款：" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Hyperlink fx:id = "gplHyperlink"
+                       contentDisplay = "CENTER"
+                       layoutX = "35.0"
+                       layoutY = "295.0"
+                       prefHeight = "20.0"
+                       prefWidth = "510.0"
+                       text = "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
+                       visited = "true" >
+                
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Hyperlink >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "330.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "4. 本项目的仓库地址：" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Hyperlink fx:id = "gitLabHyperlink"
+                       contentDisplay = "CENTER"
+                       layoutX = "35.0"
+                       layoutY = "350.0"
+                       prefHeight = "20.0"
+                       prefWidth = "55.0"
+                       text = "GitLab"
+                       visited = "true" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Hyperlink >
+            <Hyperlink fx:id = "gitHubHyperlink"
+                       contentDisplay = "CENTER"
+                       layoutX = "110.0"
+                       layoutY = "350.0"
+                       prefHeight = "20.0"
+                       prefWidth = "55.0"
+                       text = "GitHub"
+                       visited = "true" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Hyperlink >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "90.0"
+                   layoutY = "355.0"
+                   prefHeight = "20.0"
+                   prefWidth = "20.0"
+                   text = "和" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Label contentDisplay = "CENTER"
+                   layoutX = "25.0"
+                   layoutY = "385.0"
+                   prefHeight = "20.0"
+                   prefWidth = "520.0"
+                   text = "5. 作者的个人博客：" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Label >
+            <Hyperlink fx:id = "blogHyperlink"
+                       contentDisplay = "CENTER"
+                       layoutX = "35.0"
+                       layoutY = "410.0"
+                       prefHeight = "20.0"
+                       prefWidth = "510.0"
+                       text = "https://www.fstu.cc"
+                       visited = "true" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Hyperlink >
+        </Pane >
+    </Tab >
+    <Tab fx:id = "split"
+         text = "  文 件 分 割  " />
+    <Tab fx:id = "merge"
+         text = "  文 件 合 并  " />
+</TabPane >
