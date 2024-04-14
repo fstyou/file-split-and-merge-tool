@@ -11,9 +11,9 @@
 
 ## 项目预览
 
-![首页](./wiki/img/1.png)  
-![文件分割](./wiki/img/2.png)  
-![文件合并](./wiki/img/3.png)  
+![首页](res/img/1.png)  
+![文件分割](res/img/2.png)  
+![文件合并](res/img/3.png)  
 
 ## 下载地址
 [从 GitLab 下载](https://gitlab.com/fstyou/file-split-and-merge-tool/-/releases/permalink/latest)  
