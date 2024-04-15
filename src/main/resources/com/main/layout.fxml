@@ -148,7 +148,7 @@
                        layoutX = "35.0"
                        layoutY = "350.0"
                        prefHeight = "20.0"
-                       prefWidth = "55.0"
+                       prefWidth = "65.0"
                        text = "GitLab"
                        visited = "true" >
                 <font >
@@ -156,21 +156,8 @@
                           size = "15.0" />
                 </font >
             </Hyperlink >
-            <Hyperlink fx:id = "gitHubHyperlink"
-                       contentDisplay = "CENTER"
-                       layoutX = "110.0"
-                       layoutY = "350.0"
-                       prefHeight = "20.0"
-                       prefWidth = "55.0"
-                       text = "GitHub"
-                       visited = "true" >
-                <font >
-                    <Font name = "System Italic"
-                          size = "15.0" />
-                </font >
-            </Hyperlink >
             <Label contentDisplay = "CENTER"
-                   layoutX = "90.0"
+                   layoutX = "100.0"
                    layoutY = "355.0"
                    prefHeight = "20.0"
                    prefWidth = "20.0"
@@ -180,6 +167,19 @@
                           size = "15.0" />
                 </font >
             </Label >
+            <Hyperlink fx:id = "gitHubHyperlink"
+                       contentDisplay = "CENTER"
+                       layoutX = "120.0"
+                       layoutY = "350.0"
+                       prefHeight = "20.0"
+                       prefWidth = "65.0"
+                       text = "GitHub"
+                       visited = "true" >
+                <font >
+                    <Font name = "System Italic"
+                          size = "15.0" />
+                </font >
+            </Hyperlink >
             <Label contentDisplay = "CENTER"
                    layoutX = "25.0"
                    layoutY = "385.0"
