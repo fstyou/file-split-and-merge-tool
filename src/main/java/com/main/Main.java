@@ -21,12 +21,30 @@ public class Main extends Application {
     @Override
     public void start ( Stage stage ) {
         stage.setTitle ( "文件分割与合并工具" );
+        boolean setIcon = false;
         try {
-            stage.getIcons ( ).add ( new Image ( "/icon.png" ) );
+            stage.getIcons ( )
+                 .addAll ( new Image ( "/icon.ico" ) );
+            setIcon = true;
         }
-        catch ( Exception e ) {
-            Show.error ( "找不到图标 icon.png，请尝试卸载本工具后重新安装", false, null );
-            return;
+        catch ( Exception ignored ) {
+        }
+        try {
+            stage.getIcons ( )
+                 .addAll ( new Image ( "/icon.png" ) );
+            setIcon = true;
+        }
+        catch ( Exception ignored ) {
+        }
+        try {
+            stage.getIcons ( )
+                 .addAll ( new Image ( "/icon.icns" ) );
+            setIcon = true;
+        }
+        catch ( Exception ignored ) {
+        }
+        if ( ! setIcon ) {
+            Show.error ( "找不到图标 icon.ico、icon.png 或 icon.icns，请尝试卸载本工具后重新安装", false, null );
         }
         Parent layout;
         try {
