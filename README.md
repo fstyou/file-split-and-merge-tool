@@ -17,7 +17,6 @@
 
 ## 下载地址
 
-[从 GitLab 下载](https://gitlab.com/fstyou/file-split-and-merge-tool/-/releases/permalink/latest)  
 [从 GitHub 下载](https://github.com/fstyou/file-split-and-merge-tool/releases/latest)
 
 ## 开发
